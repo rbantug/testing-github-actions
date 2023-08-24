@@ -67,4 +67,9 @@ describe('TestPinia.vue', () => {
         const fetchedElement = wrapper.find('[data-test="fetch"]')
         expect(fetchedElement.text()).toBe('Status 400: Error')
     }) */
+
+    test('github action', async () => {
+        const element = await screen.findByTestId('githubActions')
+        expect(element.innerHTML).toBe('This should fail')
+    })
 })
