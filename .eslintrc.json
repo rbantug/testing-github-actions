@@ -1,0 +1,50 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "@nuxtjs/eslint-config-typescript",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:vue/vue3-essential"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "vue", 
+        "simple-import-sort",
+        "vitest"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "vue/multi-word-component-names": ["error", {
+            "ignores": ["index", "default"]
+          }],
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "no-tabs": ["error", { "allowIndentationTabs": true }],
+        "vue/html-indent": ["warn", 2],
+        "no-unused-vars": "warn",
+        "@typescript-eslint/no-unused-vars": "warn"
+    }
+}
