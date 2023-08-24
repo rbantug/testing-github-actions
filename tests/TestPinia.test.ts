@@ -69,7 +69,8 @@ describe('TestPinia.vue', () => {
     }) */
 
     test('github action', async () => {
+        render(TestPinia)
         const element = await screen.findByTestId('githubActions')
-        expect(element.innerHTML).toBe('This should fail')
+        expect(element.innerHTML.trim()).toBe('This is should fail')
     })
 })

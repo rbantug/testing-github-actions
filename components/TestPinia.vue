@@ -35,7 +35,7 @@
       </button>
     </div>
     <div data-testid="githubActions">
-      This is for another test
+      This is should fail
     </div>
   </div>
 </template>
