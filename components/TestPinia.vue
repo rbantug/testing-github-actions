@@ -35,7 +35,7 @@
       </button>
     </div>
     <div data-testid="githubActions">
-      This is for a test
+      This is for something else
     </div>
   </div>
 </template>
