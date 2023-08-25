@@ -34,6 +34,9 @@
         Get Data
       </button>
     </div>
+    <div data-testid="githubActions">
+      This is should fail
+    </div>
   </div>
 </template>
 
