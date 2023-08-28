@@ -1,7 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr: false,
     devtools: { enabled: true },
+    experimental: {
+        payloadExtraction: false
+    },
     runtimeConfig: {
         secret: process.env.TEST_ONE,
         public: {
